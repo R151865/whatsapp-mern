@@ -1,0 +1,102 @@
+
+### eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhYzQyZmU5ZjlhMjdkODAzMGFiMDg0IiwibmFtZSI6InNiIiwidXNlcm5hbWUiOiJzdWx0aGFuIiwicGFzc3dvcmQiOiJzdWx0aGFuIiwiaWF0IjoxNjU1NDU4NTQxfQ.yuemuQ01ciQMwcg53QVD9HmIJMUcnNS28UDcJsX5eH8
+
+
+###
+POST http://localhost:5000/video-call
+
+Content-Type: application/json
+
+{
+    "userId": "12345"
+}
+
+
+
+###
+POST http://localhost:5000/video-call
+Content-Type: application/json
+
+{
+    "userId": "12345"
+}
+
+
+GET http://localhost:5000
+
+
+###
+GET http://localhost:5000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhYzQyZmU5ZjlhMjdkODAzMGFiMDg0IiwibmFtZSI6InNiIiwidXNlcm5hbWUiOiJzdWx0aGFuIiwicGFzc3dvcmQiOiJzdWx0aGFuIiwiaWF0IjoxNjU1NDU4NTQxfQ.yuemuQ01ciQMwcg53QVD9HmIJMUcnNS28UDcJsX5eH8
+
+###
+
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "password": "sulthan",
+    "username": "sulthan"
+}
+
+
+###
+
+
+
+POST http://localhost:5000/users/new 
+Content-Type: application/json
+
+{
+    "name": "mahi21",
+    "password": "mahi21",
+    "username": "mahi21"
+}
+
+
+###
+
+
+
+GET http://localhost:5000/rooms/62ab3eb94fb626445aab70e0/messages
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhYzQyZmU5ZjlhMjdkODAzMGFiMDg0IiwibmFtZSI6InNiIiwidXNlcm5hbWUiOiJzdWx0aGFuIiwicGFzc3dvcmQiOiJzdWx0aGFuIiwiaWF0IjoxNjU1NDU4NTQxfQ.yuemuQ01ciQMwcg53QVD9HmIJMUcnNS28UDcJsX5eH8
+
+###
+
+
+POST http://localhost:5000/rooms/62ab3eb94fb626445aab70e0/messages/new
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhYzQyZmU5ZjlhMjdkODAzMGFiMDg0IiwibmFtZSI6InNiIiwidXNlcm5hbWUiOiJzdWx0aGFuIiwicGFzc3dvcmQiOiJzdWx0aGFuIiwiaWF0IjoxNjU1NDU4NTQxfQ.yuemuQ01ciQMwcg53QVD9HmIJMUcnNS28UDcJsX5eH8
+
+
+{
+    "message": "youth meessage from mahi"
+}
+
+
+
+###
+POST http://localhost:5000/rooms/1/messages/new
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJuYW1lIjoic2IiLCJwcm9maWxlIjoiIiwidXNlcm5hbWUiOiJzdWx0aGFuIiwicGFzc3dvcmQiOiIkMmIkMTAkenY1Lk5xQ1JhZTZtQ2ExOVNxZWhoLnB1MHdzQ1ZGSWJxeWNoLzNBM25WbVFKVmVGdUJYUHUiLCJpYXQiOjE2NTUxODI0OTd9.X-d0g3phmrw-4DmGWVl9lygNjfJlva2v-vdCr6bC-LA
+
+{
+    "message": "youth pp7 from sb new"
+}
+
+
+### Status
+GET http://localhost:5000/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJuYW1lIjoic2IiLCJwcm9maWxlIjoiIiwidXNlcm5hbWUiOiJzdWx0aGFuIiwicGFzc3dvcmQiOiIkMmIkMTAkenY1Lk5xQ1JhZTZtQ2ExOVNxZWhoLnB1MHdzQ1ZGSWJxeWNoLzNBM25WbVFKVmVGdUJYUHUiLCJpYXQiOjE2NTUxODI0OTd9.X-d0g3phmrw-4DmGWVl9lygNjfJlva2v-vdCr6bC-LA
+
+
+
+
+###
+GET http://localhost:5000/users
+
+
+
+###
+GET http://localhost:5000/calls

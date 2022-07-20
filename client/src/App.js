@@ -1,28 +1,35 @@
-import { Component } from "react";
-import React from "react";
+import { Route, Routes } from "react-router-dom";
 
-export default class App extends Component {
-  state = {
-    users: [],
-  };
-  componentDidMount() {
-    this.fetchData();
-  }
+import ChatBox from "./components/ChatBox";
+import Home from "./components/Home";
+import Login from "./components/Login";
+import VideoCall from "./components/VideoCall";
+import ProtectedRoutes from "./components/ProtectedRoutes";
 
-  fetchData = async () => {
-    const response = await fetch("/api");
-    const data = await response.json();
-    this.setState({ users: data.users });
-  };
+const App = () => (
+  <>
+    <Routes>
+      <Route exact path="/login" element={<Login />} />
 
-  render() {
-    const { users } = this.state;
-    return (
-      <ul>
-        {users.map((each) => (
-          <li key={each}>{each}</li>
-        ))}
-      </ul>
-    );
-  }
-}
+      <Route
+        exact
+        path="/video-call"
+        element={<ProtectedRoutes component={<VideoCall />} />}
+      />
+
+      <Route
+        exact
+        path="/"
+        element={<ProtectedRoutes component={<Home />} />}
+      />
+
+      <Route
+        exact
+        path="/rooms/:roomId/messages"
+        element={<ProtectedRoutes component={<ChatBox />} />}
+      />
+    </Routes>
+  </>
+);
+
+export default App;
